@@ -1,0 +1,94 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* توسيط الكاردات في المنتصف */
+  padding: 20px;
+  height: 100vh; /* ملء عرض الشاشة بالكامل */
+
+  background-color: rgb(238, 245, 245);
+  width: 100vw;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* توسيط الكاردات في المنتصف */
+  overflow-y: auto; /* تفعيل التمرير العمودي */
+  max-height: 80vh; /* الحد الأقصى لارتفاع قائمة المشاريع */
+  width: 100%; /* عرض القائمة بالكامل */
+  gap: 20px; /* مسافة بين الكاردات */
+  padding-right: 10px; /* مسافة على اليمين لتجنب التمرير */
+}
+
+.project-card {
+  display: flex;
+  background-color: #afd7dc; /* لون خلفية الكارد */
+  border: 1px solid #b2ebf2; /* لون حدود الكارد */
+  border-radius: 20px; /* انحناء الكارد */
+  width: 88%; /* عرض الكارد */
+  max-width: 800px; /* الحد الأقصى للعرض */
+  height: auto; /* السماح للارتفاع بالتكيف */
+  min-height: 200px; /* الحد الأدنى للارتفاع */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s; /* تأثير التحول */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* رفع الكارد عند التمرير */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التمرير */
+}
+
+.project-image {
+  width: 200px; /* عرض الصورة */
+  height: 100%; /* ارتفاع الصورة */
+  object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  border-top-left-radius: 20px; /* انحناء الحافة اليسرى العليا */
+  border-bottom-left-radius: 20px; /* انحناء الحافة اليسرى السفلى */
+}
+
+.project-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* يجعل الجزء الأيمن يملأ المساحة المتبقية */
+}
+
+.project-title {
+  font-size: 1.8em; /* حجم أكبر للعناوين */
+  color: #00796b; /* لون أزرق غامق */
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.project-title:hover {
+  text-decoration: underline; /* إضافة تأثير عند التمرير */
+}
+
+.project-description {
+  color: #004d40; /* لون أزرق مائل للغموض */
+  font-size: 1.1em; /* حجم أكبر للوصف */
+}
+
+.social-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* توسيط الأيقونات */
+  gap: 60px; /* زيادة المسافة بين الأيقونات */
+  margin-top: 20px; /* مسافة أعلى الشريط */
+  background-color: #afd7dc; /* لون الخلفية للشريط */
+  padding: 5px; /* padding داخل الشريط */
+  border-radius: 10px; /* انحناء الزوايا */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف للشريط */
+}
+
+.social-bar a {
+  color: #158e80; /* لون الأيقونات */
+  font-size: 1.5em; /* حجم الأيقونات */
+  text-decoration: none; /* إزالة التسطير */
+}
+
+.social-bar a:hover {
+  color: #004d40; /* لون مختلف عند التمرير */
+}

@@ -1,0 +1,6 @@
+.mainContent {
+  display: flex;
+  width: 100vw; /* عرض كامل */
+  height: 100vh; /* ارتفاع كامل */
+  box-sizing: border-box;
+}
