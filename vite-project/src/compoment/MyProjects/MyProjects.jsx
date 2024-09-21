@@ -1,4 +1,3 @@
-import React from "react";
 import "./MyProjects.css";
 import {
   FaLinkedin,
@@ -7,6 +6,10 @@ import {
   FaEnvelope,
   FaGithub,
 } from "react-icons/fa";
+import ImgAi from "../../IMG/Screenshot 2024-09-08 at 17-00-05 Vite React.png";
+import ImgPrayer from "../../IMG/Screenshot 2024-09-19 at 11-37-34 prayer times.png";
+import ImgSolafa from "../../IMG/portfByHTMLandCSS.png";
+import ImgLemona from "../../IMG/Screenshot 2024-09-19 at 18-33-32 LEMONA.png";
 
 const projects = [
   {
@@ -14,8 +17,7 @@ const projects = [
     title: "Prayer Times Page",
     description:
       "Using HTML, CSS, and JavaScript along with a library like Tailwind CSS to display prayer times based on the user's location.",
-    image:
-      "file:///C:/Users/msafat/Desktop/all%20proj/solafa%20ameer%20portfolio/img/prayerTimes.png", // Placeholder image
+    image: ImgPrayer,
     link: "#",
   },
   {
@@ -23,35 +25,23 @@ const projects = [
     title: "Image Creator",
     description:
       "Using HTML, CSS, JavaScript, and React along with a library like Material UI. This website generates an image based on the description you provide using artificial intelligence. ",
-    image:
-      "file:///C:/Users/msafat/Desktop/all%20proj/solafa%20ameer%20portfolio/img/ai.png", // Placeholder image
+    image: ImgAi,
     link: "http://example.com/project2",
   },
   {
     id: 3,
     title: "Lemona Restaurant",
     description: "Using HTML, CSS only .This website of a restaurant.",
-    image:
-      "file:///C:/Users/msafat/Desktop/all%20proj/solafa%20ameer%20portfolio/img/LEMONA.png", // Placeholder image
+    image: ImgLemona,
     link: "http://example.com/project3",
   },
   {
     id: 4,
     title: "Project 4",
-    description:
-      "This is the description for Project 4. It contains interesting details about the project.",
-    image: "https://via.placeholder.com/150", // Placeholder image
+    description: "Using HTML, CSS only .This is my second portfolio.",
+    image: ImgSolafa,
     link: "http://example.com/project4",
   },
-  {
-    id: 5,
-    title: "Project 5",
-    description:
-      "This is the description for Project 5. It contains interesting details about the project.",
-    image: "https://via.placeholder.com/150", // Placeholder image
-    link: "http://example.com/project5",
-  },
-  // You can add more projects here
 ];
 
 export default function MyProjects() {
